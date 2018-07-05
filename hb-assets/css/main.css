@@ -17,6 +17,9 @@
 
 /*==========================================
 00. Colors
+
+navy-blue: #000080;
+yellow:#FED630;
 ===========================================*/
 /*==========================================
  Body, links, paragraphs, general style
@@ -24,12 +27,55 @@
 /*==========================================
  Header & Navigation
 ===========================================*/
+nav#navigation.navbar.navbar-expand-md.navbar-light{
+    border-top:5px solid #000080;
+    border-bottom:5px solid #000080;
+    margin:1rem;
+}
+div#navbarSupportedContent.collapse.navbar-collapse.justify-content-center>ul.nav>li.nav-item>a.nav-link{
+    color:#000080;
+    font-weight:600;
+}
+li.nav-item{
+    margin-bottom:10px;
+}
+.nav-link{
+    display:inline-block;
+    color: #000;
+    text-decoration: none;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #FED630;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+
 /*==========================================
  Footer
 ===========================================*/
 /*==========================================
- Section Landing Page
+Home
 ===========================================*/
+section#commitment>div.container-fluid.row{
+    margin:8rem auto;
+}
+section#commitment>div.container-fluid.row>div.col-lg-10.commitment-content{
+    height:20rem;
+    background-color:#000080;
+    box-shadow:  5px 5px 11px  rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+}
 /*==========================================
  Responsive
 ===========================================*/
