@@ -24,7 +24,17 @@ yellow:#FED630;
 /*==========================================
  Body, links, paragraphs, general style
 ===========================================*/
-
+.hb-header{
+    font-family: 'Oswald', sans-serif;
+}
+.hb-subtext{
+    font-family: 'Open Sans', sans-serif;
+}
+ul.nav>li.nav-item>a.nav-link{
+    font-family: 'Arimo', sans-serif;
+    color:#000080;
+    font-weight:600;
+}
 /*==========================================
  Header & Navigation
 ===========================================*/
@@ -33,14 +43,10 @@ nav#navigation.navbar.navbar-expand-md.navbar-light{
     border-bottom:5px solid #000080;
     margin:1rem;
 }
-div#navbarSupportedContent.collapse.navbar-collapse.justify-content-center>ul.nav>li.nav-item>a.nav-link{
-    color:#000080;
-    font-weight:600;
-}
-li.nav-item{
+div#navbarSupportedContent.collapse.navbar-collapse.justify-content-center>ul.nav>li.nav-item{
     margin-bottom:10px;
 }
-.nav-link{
+div#navbarSupportedContent.collapse.navbar-collapse.justify-content-center>ul.nav>li.nav-item>a.nav-link{
     display:inline-block;
     color: #000;
     text-decoration: none;
@@ -63,19 +69,39 @@ li.nav-item{
 /*==========================================
  Footer
 ===========================================*/
+footer#home{
+    padding:0 1rem;
+}
+footer#home>div.row.container-fluid.justify-content-center{
+    border-top:3px solid #000080;
+    margin:1rem auto;
+    padding:1rem;
+}
 /*==========================================
 Home
 ===========================================*/
 section#commitment>div.container-fluid.row{
     margin:8rem auto;
 }
-section#commitment>div.container-fluid.row>div.col-lg-10.commitment-content{
-    height:20rem;
+section#commitment>div.container-fluid.row>div.col-lg-9.commitment-content{
+    height:50rem;
     background-color:#000080;
     box-shadow:  5px 5px 11px  rgba(0,0,0,0.6);
     -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
     -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
     -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+}
+section#commitment>div.container-fluid.row>div.col-lg-9.commitment-content>h1.hb-header{
+    color:#FED630;
+    padding:4rem 9rem 0 9rem;
+    font-size:4rem;
+    line-height:6rem;
+}
+section#commitment>div.container-fluid.row>div.col-lg-9.commitment-content>p.hb-subtext{
+    color:#FFF;
+    font-size:1.2rem;
+    padding:4rem 12rem 0 9rem;
+    
 }
 /*==========================================
  Responsive
