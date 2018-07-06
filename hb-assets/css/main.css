@@ -9,9 +9,13 @@
 
 03. Footer
 
-04. Section Landing Page
+04. Home
 
-05. Responsive
+05. About
+
+06. Contact
+
+07. Responsive
 
 ==========================================================================================*/
 
@@ -22,7 +26,7 @@ navy-blue: #000080;
 yellow:#FED630;
 ===========================================*/
 /*==========================================
- Body, links, paragraphs, general style
+01. Body, links, paragraphs, general style
 ===========================================*/
 .hb-header{
     font-family: 'Oswald', sans-serif;
@@ -36,11 +40,11 @@ ul.nav>li.nav-item>a.nav-link{
     font-weight:600;
 }
 /*==========================================
- Header & Navigation
+02. Header & Navigation
 ===========================================*/
 nav#navigation.navbar.navbar-expand-md.navbar-light{
-    border-top:5px solid #000080;
-    border-bottom:5px solid #000080;
+    border-top:7px solid #000080;
+    border-bottom:7px solid #000080;
     margin:1rem;
 }
 div#navbarSupportedContent.collapse.navbar-collapse.justify-content-center>ul.nav>li.nav-item{
@@ -67,18 +71,18 @@ div#navbarSupportedContent.collapse.navbar-collapse.justify-content-center>ul.na
 
 
 /*==========================================
- Footer
+03. Footer
 ===========================================*/
 footer#home{
     padding:0 1rem;
 }
 footer#home>div.row.container-fluid.justify-content-center{
-    border-top:3px solid #000080;
+    border-top:7px solid #000080;
     margin:1rem auto;
     padding:1rem;
 }
 /*==========================================
-Home
+04. Home
 ===========================================*/
 section#commitment>div.container-fluid.row{
     margin:8rem auto;
@@ -104,7 +108,64 @@ section#commitment>div.container-fluid.row>div.col-lg-9.commitment-content>p.hb-
     
 }
 /*==========================================
- Responsive
+05. About
+===========================================*/
+section#about-logo>div.row.container{
+    margin:1rem auto 3rem;
+    text-align:center;
+}
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.ah-details,
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.tb-details{
+    background-color:#FED630;
+    padding:1.5rem 2rem .3rem;
+    width:42%;
+    position:absolute;
+    top:17rem;
+    right:10rem;
+}
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.ah-details>h5,
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.ah-details>p,
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.tb-details>h5,
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.tb-details>p{
+    font-family: 'Raleway', sans-serif;
+}
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.ah-details>p,
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.tb-details>p{
+    text-align:center;
+    padding-top:1rem;
+    border-top:2px solid #000080;
+    width:18.4rem;
+}
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.ah-border,
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.tb-border{
+    border:2px solid #000080;
+    height:7.4rem;
+    width:42%;
+    position: absolute;
+    top:18rem;
+    right:9rem;
+}
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.ah-img,
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.tb-img{
+    margin:0 auto;
+    text-align:center;
+}
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.ah-bio,
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.tb-bio{
+    background-color:#000080;
+    padding:2rem;
+    margin:5rem auto;
+    width:37rem;
+}
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.ah-bio>p,
+section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.tb-bio>p{
+    color:#FFF;
+}
+/*==========================================
+06. Contact
+===========================================*/
+/*==========================================
+ 07. Responsive
 ===========================================*/
 
 @media only screen and (max-width: 1192px) {
