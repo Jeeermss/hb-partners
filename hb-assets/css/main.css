@@ -29,7 +29,10 @@ yellow:#FED630;
 01. Body, links, paragraphs, general style
 ===========================================*/
 .hb-header{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size:3.5rem;
+    line-height:4rem;
+    -webkit-font-smoothing: antialiased;
 }
 .hb-subtext{
     font-family: 'Open Sans', sans-serif;
@@ -52,7 +55,7 @@ div#navbarSupportedContent.collapse.navbar-collapse.justify-content-center>ul.na
 }
 div#navbarSupportedContent.collapse.navbar-collapse.justify-content-center>ul.nav>li.nav-item>a.nav-link{
     display:inline-block;
-    color: #000;
+    color: #000080;
     text-decoration: none;
 }
 .nav-link::after {
@@ -73,13 +76,24 @@ div#navbarSupportedContent.collapse.navbar-collapse.justify-content-center>ul.na
 /*==========================================
 03. Footer
 ===========================================*/
-footer#home{
+footer{
     padding:0 1rem;
 }
-footer#home>div.row.container-fluid.justify-content-center{
+footer#home>div.row.container-fluid.justify-content-center,
+footer#about>div.row.container-fluid.justify-content-center,
+footer#contact>div.row.container-fluid.justify-content-center{
     border-top:7px solid #000080;
-    margin:1rem auto;
-    padding:1rem;
+    margin:0 auto;
+    padding:2rem 0 0 0;
+}
+footer#home>div.row.container-fluid.justify-content-center>img.footer-logo,
+footer#about>div.row.container-fluid.justify-content-center>img.footer-logo,
+footer#contact>div.row.container-fluid.justify-content-center>img.footer-logo{
+    height:100%;
+    width:4%;
+    position:relative;
+    left:33rem;
+    bottom:1rem;
 }
 /*==========================================
 04. Home
@@ -97,9 +111,7 @@ section#commitment>div.container-fluid.row>div.col-lg-9.commitment-content{
 }
 section#commitment>div.container-fluid.row>div.col-lg-9.commitment-content>h1.hb-header{
     color:#FED630;
-    padding:4rem 9rem 0 9rem;
-    font-size:4rem;
-    line-height:6rem;
+    padding:4rem 1rem 0 9rem;
 }
 section#commitment>div.container-fluid.row>div.col-lg-9.commitment-content>p.hb-subtext{
     color:#FFF;
@@ -164,6 +176,13 @@ section#about-us>div.row.container-fluid>div.col-lg-6.col-sm-12>div.tb-bio>p{
 /*==========================================
 06. Contact
 ===========================================*/
+section#contact-information>div.row.container{
+    margin:3rem auto;
+    border-top:1.5rem solid #000080;
+}
+section#contact-information>div.row.container>h1.hb-header{
+    color:#000080;
+}
 /*==========================================
  07. Responsive
 ===========================================*/
